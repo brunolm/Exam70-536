@@ -11,6 +11,14 @@ using System.IO;
 
 namespace Exam70_536
 {
+    /// <summary>
+    /// You should pay attention to:
+    /// - Classes, what which one draws
+    /// 
+    /// Questions:
+    /// - How to draw text to an Image
+    /// - How to draw solid/empty objects
+    /// </summary>
     [TestClass]
     public class DrawingTest
     {
@@ -30,7 +38,7 @@ namespace Exam70_536
                 unsafeTs = Performance.Test("Unsafe grayscale", 1, false,
                     () =>
                     {
-                        gray = GrayscaleUnsafe(img);
+                        gray = GrayscaleUnsafe(img); // won't be asked, just playing around
                     });
 
                 gray.Save("SampleUnsafe.jpg");

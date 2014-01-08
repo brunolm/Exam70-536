@@ -12,6 +12,10 @@ namespace Exam70_536
     /// The System.Security.Cryptography namespace provides cryptographic services, including secure encoding
     /// and decoding of data, as well as many other operations, such as hashing, random number generation,
     /// and message authentication.
+    /// 
+    /// You should pay attention to:
+    /// - Constructor
+    /// - Usage
     /// </summary>
     /// <see cref="http://msdn.microsoft.com/en-us/library/system.security.cryptography.aspx"/>
     [TestClass]

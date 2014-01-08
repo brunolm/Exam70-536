@@ -7,6 +7,10 @@ using System.Text.RegularExpressions;
 
 namespace Exam70_536
 {
+    /// <summary>
+    /// You should pay attention to:
+    /// - Mainly the tricky questions, read the regex several times
+    /// </summary>
     [TestClass]
     public class RegexTest
     {

@@ -78,6 +78,11 @@ namespace Exam70_536
             }
         }
 
+        /// <summary>
+        /// You should pay attention to:
+        /// - How to write
+        /// - AutoFlush, Flush()
+        /// </summary>
         [TestMethod]
         public void StreamWriterTest()
         {
@@ -140,6 +145,7 @@ namespace Exam70_536
             fi.Attributes |= FileAttributes.ReadOnly;
 
             Assert.IsTrue((fi.Attributes & FileAttributes.ReadOnly) == FileAttributes.ReadOnly);
+            // fi.Attributes.HasFlag(FileAttributes.ReadOnly); // test probably won't ask this method, but it exists
 
             fi.Attributes &= ~FileAttributes.ReadOnly;
 
@@ -209,6 +215,10 @@ namespace Exam70_536
             Assert.IsTrue(true);
         }
 
+        /// <summary>
+        /// Gets files recursively ignoring errors.
+        /// </summary>
+        /// <remarks>Will fail if you don't have files on the desktop.</remarks>
         [TestMethod]
         public void FileTestListAll()
         {

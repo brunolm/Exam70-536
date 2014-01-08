@@ -6,6 +6,12 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Exam70_536
 {
+    /// <summary>
+    /// Questions:
+    /// - How to create an AppDomain?
+    /// - How to close an AppDomain?
+    /// - How to run an assembly in an AppDomain?
+    /// </summary>
     [TestClass]
     public class AppDomainTest
     {

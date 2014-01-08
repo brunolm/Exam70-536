@@ -8,6 +8,13 @@ using System.IO;
 
 namespace Exam70_536
 {
+    /// <summary>
+    /// 100% chance that the test will ask: How to zip a file with GZipStream or DeflateStream
+    /// 
+    /// You should pay attention to:
+    /// - SYNTAX (you should know exactly the order of the parameters)
+    /// - You should know how to read/write to streams
+    /// </summary>
     [TestClass]
     public class CompressionTest
     {
@@ -32,6 +39,7 @@ namespace Exam70_536
         /// 
         /// Notes to Inheritors
         /// When you inherit from GZipStream, you must override the following members: CanSeek, CanWrite, and CanRead.
+        /// 
         /// </summary>
         /// <see cref="http://msdn.microsoft.com/en-us/library/system.io.compression.gzipstream.aspx"/>
         [TestMethod]
@@ -85,7 +93,12 @@ namespace Exam70_536
             Assert.IsTrue(new FileInfo(zipname).Length < new FileInfo(filename).Length);
         }
 
-        internal void Compress<T>(T stream) where T: Stream
+        /// <summary>
+        /// Writes on the zip/deflate stream.
+        /// </summary>
+        /// <typeparam name="T">Type of the compression stream</typeparam>
+        /// <param name="stream">Zip/Deflate Stream</param>
+        internal void Compress<T>(T stream) where T : Stream
         {
             string filename = "ftz.txt";
 

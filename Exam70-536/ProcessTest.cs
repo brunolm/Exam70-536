@@ -8,6 +8,10 @@ using System.Text.RegularExpressions;
 
 namespace Exam70_536
 {
+    /// <summary>
+    /// Questions:
+    /// - How do you start a process?
+    /// </summary>
     [TestClass]
     public class ProcessTest
     {

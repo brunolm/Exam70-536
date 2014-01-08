@@ -41,6 +41,12 @@ namespace Exam70_536
         /// <summary>
         /// The byte keyword denotes an integral type that stores values from 0 to 255.
         /// The sbyte keyword indicates an integral type that stores values from -128 to 127.
+        /// 
+        /// 100% chance that the test will ask: What is the max number you can store in an UInt16?
+        /// 
+        /// You should pay attention to:
+        /// - Ranges
+        /// - Usage
         /// </summary>
         /// <remarks>
         /// There is a predefined implicit conversion from byte to short, ushort, int, uint, long, ulong, float, double, or decimal.
@@ -398,6 +404,10 @@ namespace Exam70_536
             Assert.AreEqual(15, sz.Height);
         }
 
+        /// <summary>
+        /// You should pay attention to:
+        /// - Syntax
+        /// </summary>
         [TestMethod]
         public void NullableTypesTest()
         {
@@ -408,6 +418,10 @@ namespace Exam70_536
             Assert.AreEqual<int?>(null, nullInt2);
         }
 
+        /// <summary>
+        /// You should pay attention to:
+        /// - Value-type vs Reference-type
+        /// </summary>
         [TestMethod]
         public void FuncParamsTest()
         {

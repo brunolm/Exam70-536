@@ -6,6 +6,12 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Exam70_536
 {
+    /// <summary>
+    /// Questions:
+    /// - Which one supports Japanese/Chinese?
+    /// - Which one could still be equivalent in another encoding?
+    /// - Which one generates the largest file size?
+    /// </summary>
     [TestClass]
     public class EncodingTest
     {

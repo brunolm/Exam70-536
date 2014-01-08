@@ -8,6 +8,10 @@ using System.Diagnostics;
 
 namespace Exam70_536
 {
+    /// <summary>
+    /// Questions:
+    /// - How do you create an IsolatedStorageFile?
+    /// </summary>
     [TestClass]
     public class IsolatedStorageTest
     {

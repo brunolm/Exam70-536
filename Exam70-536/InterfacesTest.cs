@@ -7,6 +7,11 @@ using System.Threading;
 
 namespace Exam70_536
 {
+    /// <summary>
+    /// You should pay attention to:
+    /// - All implemented interfaces in this test class,
+    /// for what they are used for and how to use them
+    /// </summary>
     [TestClass]
     public class InterfacesTest
     {
@@ -35,6 +40,10 @@ namespace Exam70_536
             Assert.AreNotEqual(0, comp1.CompareTo(comp2));
         }
 
+        /// <summary>
+        /// You should pay attention to:
+        /// - When you should use IDispose
+        /// </summary>
         [TestMethod]
         public void DisposableTest()
         {

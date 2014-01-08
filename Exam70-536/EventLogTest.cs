@@ -8,6 +8,12 @@ using System.Reflection;
 
 namespace Exam70_536
 {
+    /// <summary>
+    /// You should pay attention to:
+    /// - How to write/clear/delete
+    /// - Which types of events there is
+    /// - EventLogs available on Windows
+    /// </summary>
     /// <remarks>Requires administrator rights</remarks>
     [TestClass]
     public class EventLogTest

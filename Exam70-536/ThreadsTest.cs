@@ -11,7 +11,7 @@ namespace Exam70_536
     public class ThreadsTest
     {
         public static object locker = new object();
-        private static Mutex mut = new Mutex();
+        private static Mutex mut = new Mutex(); // pay attention to this
         
         [TestMethod]
         public void ThreadTypesTest()
@@ -86,6 +86,12 @@ namespace Exam70_536
             ThreadPool.UnsafeQueueUserWorkItem((o) => { }, null);
         }
 
+        /// <summary>
+        /// Used to sync threads across AppDomains.
+        /// 
+        /// You should pay attention to:
+        /// - How to use it, this is most probably going to be on the test
+        /// </summary>
         [TestMethod]
         public void MutexTest()
         {

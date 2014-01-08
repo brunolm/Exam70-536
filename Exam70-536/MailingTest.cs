@@ -8,6 +8,12 @@ using System.Net;
 
 namespace Exam70_536
 {
+    /// <summary>
+    /// Questions:
+    /// - How to send an email?
+    /// - How to attach a file?
+    /// - How to write as HTML?
+    /// </summary>
     [TestClass]
     public class MailingTest
     {

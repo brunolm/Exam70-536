@@ -7,6 +7,9 @@ using System.Diagnostics;
 
 namespace Exam70_536
 {
+    /// <summary>
+    /// Helper class used on tests, unrelated to the certification
+    /// </summary>
     public static class Performance
     {
         public static TimeSpan Test(string name, decimal times, bool precompile, Action fn)

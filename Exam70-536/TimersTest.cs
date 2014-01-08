@@ -7,6 +7,9 @@ using System.Threading;
 
 namespace Exam70_536
 {
+    /// <summary>
+    /// Two different Timer classes
+    /// </summary>
     [TestClass]
     public class TimersTest
     {

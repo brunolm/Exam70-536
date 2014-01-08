@@ -68,7 +68,7 @@ namespace Exam70_536
         /// Pointers and memory
         /// </summary>
         [TestMethod]
-        public void PointerConecptTest()
+        public void PointerConceptTest()
         {
             String str; // allocate a pointer
 
@@ -129,6 +129,10 @@ namespace Exam70_536
             Assert.AreEqual(1, Destructor.Instances);
         }
 
+        /// <summary>
+        /// Questions:
+        /// - What types accept implicit cast?
+        /// </summary>
         public void CastTest()
         {
             int value = 10;
@@ -151,6 +155,10 @@ namespace Exam70_536
         /// Boxing a value type packages it inside an instance of the Object reference type.
         /// This allows the value type to be stored on the garbage collected heap.
         /// Unboxing extracts the value type from the object.
+        /// 
+        /// Questions:
+        /// - Why should you avoid boxing/unboxing?
+        /// 
         /// </summary>
         /// <remarks>
         /// Performance
@@ -227,6 +235,11 @@ namespace Exam70_536
             }
         }
 
+        /// <summary>
+        /// You should pay attention to:
+        /// - Order of exceptions, more specific first and more general later
+        /// - Usage
+        /// </summary>
         [TestMethod]
         public void ExceptionTest()
         {
@@ -253,6 +266,10 @@ namespace Exam70_536
             Assert.IsTrue(!File.Exists("file.txt"));
         }
 
+        /// <summary>
+        /// Questions:
+        /// - When should you use StringBuilder instead of a String?
+        /// </summary>
         [TestMethod]
         public void StringBuilderTest()
         {

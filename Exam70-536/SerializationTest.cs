@@ -9,6 +9,13 @@ using System.IO;
 
 namespace Exam70_536
 {
+    /// <summary>
+    /// You should pay attention to:
+    /// - Parameterless constructor
+    /// - Attributes
+    /// - Events
+    /// - Interfaces
+    /// </summary>
     [TestClass]
     public class SerializationTest
     {

@@ -8,6 +8,13 @@ using System.Collections.Specialized;
 
 namespace Exam70_536
 {
+    /// <summary>
+    /// You should pay attention to:
+    /// - Constructors
+    /// - Methods to Add/Remove/Find/Get... (non-linq methods)
+    /// - How data structures work. Stack: FILO; Queue: FIFO; LinkedLists...
+    /// - IEqualityComparer and IComparer interfaces, what it does, what it is used for
+    /// </summary>
     [TestClass]
     public class CollectionsTest
     {
@@ -125,6 +132,9 @@ namespace Exam70_536
 
         /// <summary>
         /// Represents a collection of keys and values.
+        /// 
+        /// You should pay attention to:
+        /// - Inner type, which is KeyValuePair(TKey, TObject)
         /// </summary>
         /// <remarks>
         /// Keys are case sensitive by default, but can be changed.
@@ -196,6 +206,8 @@ namespace Exam70_536
 
         /// <summary>
         /// Represents a collection of key/value pairs that are organized based on the hash code of the key.
+        /// 
+        /// Uses GetHashCode and Equals (IEqualityComparer)
         /// </summary>
         /// <remarks>
         /// Each element is a key/value pair stored in a DictionaryEntry object. A key cannot be null, but a value can be.

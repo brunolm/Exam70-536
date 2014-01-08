@@ -86,9 +86,9 @@ namespace Exam70_536
                 this.Name = name;
             }
 
-            public int CauseDamage(int kiToConsume, int concetration)
+            public int CauseDamage(int kiToConsume, int concentration)
             {
-                return kiToConsume * concetration;
+                return kiToConsume * concentration;
             }
         }
     }

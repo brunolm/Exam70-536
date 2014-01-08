@@ -8,6 +8,12 @@ using System.Globalization;
 
 namespace Exam70_536
 {
+    /// <summary>
+    /// You should pay attention to:
+    /// - What "en" and "US" mean in "en-US"
+    /// - How to create a CultureInfo
+    /// - How to use CultureInfo
+    /// </summary>
     [TestClass]
     public class I18nTest
     {
